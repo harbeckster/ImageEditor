@@ -8,16 +8,17 @@ public class ImageEditorFrame extends JFrame{
 	ImageEditorPanel panel;
 	   
 	public ImageEditorFrame(){       
+		panel = new ImageEditorPanel(); 	
+		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);       
 		setSize(400,  300);       
-		setVisible(true);   
 		setTitle("Texteditor 2M Pro Extreme Edition Plus");
 		createMenuBar();
-		
-		panel = new ImageEditorPanel(); 
-		add(panel);
-		
 		setDummyImage();
+		
+		add(panel);
+		setVisible(true);   
+		
 	} 
 	
 	private void setDummyImage(){
